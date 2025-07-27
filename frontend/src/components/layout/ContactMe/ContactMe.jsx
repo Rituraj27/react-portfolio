@@ -41,14 +41,14 @@ function ContactMe() {
       });
 
       if (res.data.success) {
-        toast.success('From submitted successfully');
+        toast.success('Form submitted successfully');
         setFormData({ email: '', name: '', message: '' });
       } else {
         toast.error('Something went wrong IDK');
       }
     } catch (error) {
       toast.error(`Idk the error DAM`);
-      throw error();
+      console.log(error);
     }
   };
 
@@ -126,7 +126,7 @@ function ContactMe() {
                 type='submit'
                 className='py-2 px-6 rounded-md'
                 style={{ backgroundColor: color }}
-                // disabled={validEmail}
+                disabled={validEmail}
               >
                 Submit
               </button>
