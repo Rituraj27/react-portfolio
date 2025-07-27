@@ -2,15 +2,23 @@ import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import rateLimit from 'express-rate-limit';
 
 const app = express();
 app.use(express.json());
 dotenv.config();
 app.use(
   cors({
-    origin: 'https://riturajhao.in',
+    origin: ['https://riturajhao.in', 'https://www.riturajhao.in'],
+    methods: ['POST'],
   })
 );
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 50,
+});
+app.use('/send', limiter);
 
 const port = process.env.PORT || 5000;
 
