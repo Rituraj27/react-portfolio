@@ -22,6 +22,10 @@ app.use('/send', limiter);
 
 const port = process.env.PORT || 5000;
 
+app.get('/', (req, res) => {
+  res.send('API is live');
+});
+
 app.post('/send', async (req, res) => {
   const { email, name, message } = req.body;
 
