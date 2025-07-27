@@ -21,7 +21,7 @@ export default function Navbar() {
   const { color } = useColor();
   const { assets } = clodinaryLinks;
   return (
-    <nav className='bg-white hidden dark:bg-[#232323]  z-50 fixed top-0 left-0 w-full md:flex justify-between h-16 items-center px-[10vw] shadow-2xl'>
+    <nav className='bg-[#dedbdb]  hidden dark:bg-[#232323]  z-50 fixed top-0 left-0 w-full md:flex justify-between h-16 items-center px-[10vw]'>
       <div>
         <img
           src={assets.logo}
@@ -45,7 +45,7 @@ export default function Navbar() {
             <Link to='/'>home</Link>
           </li>
           <li>
-            <Link to='/about'>about me</Link>
+            <a href='#about'>about me</a>
           </li>
           <li>
             <Link to='/contact'>projects</Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
             <Link to='/contact'>blog</Link>
           </li>
           <li>
-            <Link to='/contact'>contact</Link>
+            <a href='#contact'>contact</a>
           </li>
           <li>
             <ToogleBtn />

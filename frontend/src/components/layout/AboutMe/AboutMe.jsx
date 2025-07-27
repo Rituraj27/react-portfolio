@@ -13,7 +13,7 @@ function AboutMe() {
       </h2>
       <div
         className='w-full h-auto -skew-y-3 flex items-center justify-between px-[10vw] p-20 md:flex-row flex-col gap-10 relative '
-        style={{ backgroundColor: theme === 'dark' ? '#303030' : color }}
+        style={{ backgroundColor: theme === 'dark' ? '#232323' : color }}
       >
         <div className='w-52 h-52 skew-y-3 rounded-full overflow-hidden border-4 border-white'>
           <img
@@ -39,7 +39,7 @@ function AboutMe() {
           <div
             className='md:w-68 h-auto bg-red-400 w-full rounded-md shadow-2xl'
             style={{
-              backgroundColor: theme === 'dark' ? '#4b4a4a' : '#fff',
+              backgroundColor: theme === 'dark' ? '#242424' : '#dedbdb',
               color: theme === 'dark' ? '#fff' : color,
             }}
           >
@@ -51,7 +51,7 @@ function AboutMe() {
           <div
             className='md:w-68 h-auto bg-red-400 w-full rounded-md shadow-2xl'
             style={{
-              backgroundColor: theme === 'dark' ? '#4b4a4a' : '#fff',
+              backgroundColor: theme === 'dark' ? '#242424' : '#dedbdb',
               color: theme === 'dark' ? '#fff' : color,
             }}
           >
@@ -64,7 +64,7 @@ function AboutMe() {
           <div
             className='md:w-68 h-auto bg-red-400 w-full rounded-md shadow-2xl'
             style={{
-              backgroundColor: theme === 'dark' ? '#4b4a4a' : '#fff',
+              backgroundColor: theme === 'dark' ? '#242424' : '#dedbdb ',
               color: theme === 'dark' ? '#fff' : color,
             }}
           >

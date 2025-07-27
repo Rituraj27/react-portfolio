@@ -16,7 +16,7 @@ export default function ColorBox() {
   };
 
   return (
-    <div className='absolute md:-bottom-10 md:-left-5 left-[50%] -bottom-10 -translate-x-[50%] bg-white h-14 w-52 p-2 rounded-md flex gap-2 items-center justify-evenly dark:bg-[#303030] shadow-2xl'>
+    <div className='bg-[#cccccc]  absolute md:-bottom-10 md:-left-5 left-[50%] -bottom-10 -translate-x-[50%] h-14 w-52 p-2 rounded-md flex gap-2 items-center justify-evenly dark:bg-[#303030] shadow-2xl'>
       {colors.map(({ hex, name }) => (
         <button
           key={name}

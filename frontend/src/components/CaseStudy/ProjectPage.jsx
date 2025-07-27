@@ -14,7 +14,7 @@ function ProjectPage() {
   }
 
   return (
-    <div className='p-10 max-w-5xl mx-auto text-black dark:text-white font-mont mt-[10vh]'>
+    <div className='px-[10vw] py-5 w-full mx-auto text-black dark:text-white dark:bg-[#191919] font-mont md:mt-[8vh] mt-0'>
       <h1 className='text-4xl font-bold mb-6'>{project.title}</h1>
 
       <img
@@ -37,7 +37,7 @@ function ProjectPage() {
         {project.techStack.map((tech, index) => (
           <span
             key={index}
-            className='bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm'
+            className='bg-gray-400 dark:bg-gray-700 px-3 py-1 rounded-full text-sm'
           >
             {tech}
           </span>

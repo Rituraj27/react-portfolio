@@ -13,7 +13,7 @@ export default function ThinksIDo() {
       </h2>
 
       <div className='flex justify-between md:flex-row flex-col items-center gap-6 py-[5vh]'>
-        <div className='dark:text-white text-black h-72 md:w-80 w-[90%] rounded-xl shadow-2xl bg-white  dark:bg-[#303030]  flex flex-col items-center justify-center gap-5'>
+        <div className='dark:text-white text-black h-72 md:w-80 w-[90%] rounded-xl shadow-2xl bg-[#cecece] dark:bg-[#232323]  flex flex-col items-center justify-center gap-5'>
           <FaCode
             className='text-8xl p-4 rounded-full'
             style={{ backgroundColor: color }}
@@ -25,7 +25,7 @@ export default function ThinksIDo() {
           </p>
         </div>
 
-        <div className='dark:text-white text-black h-72 md:w-80 w-[90%] rounded-xl shadow-2xl bg-white  dark:bg-[#303030]  flex flex-col items-center justify-center gap-5'>
+        <div className='dark:text-white text-black h-72 md:w-80 w-[90%] rounded-xl shadow-2xl bg-[#dedbdb]  dark:bg-[#232323]  flex flex-col items-center justify-center gap-5'>
           <IoLogoJavascript
             className='text-8xl p-4 rounded-full'
             style={{ backgroundColor: color }}
@@ -37,7 +37,7 @@ export default function ThinksIDo() {
           </p>
         </div>
 
-        <div className='dark:text-white text-black h-72 md:w-80 w-[90%] rounded-xl shadow-2xl bg-white  dark:bg-[#303030] flex flex-col items-center justify-center gap-5'>
+        <div className='dark:text-white text-black h-72 md:w-80 w-[90%] rounded-xl shadow-2xl bg-[#dedbdb]  dark:bg-[#232323] flex flex-col items-center justify-center gap-5'>
           <SiLeetcode
             className='text-8xl p-4 rounded-full'
             style={{ backgroundColor: color }}

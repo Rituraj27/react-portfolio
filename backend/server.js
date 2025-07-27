@@ -1,6 +1,48 @@
 import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
 
-require('dotenv').config();
 const app = express();
+app.use(express.json());
+dotenv.config();
+app.use(
+  cors({
+    origin: 'https://riturajhao.in',
+  })
+);
+
+const port = process.env.PORT || 5000;
+
+console.log(process.env.EMAIL_PASS);
+console.log(process.env.EMAIL_USER);
+
+app.post('/send', async (req, res) => {
+  const { email, name, message } = req.body;
+
+  try {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      subject: `Message from ${name}`,
+      text: `Email: ${email} \n\nMessage: ${message}`,
+    });
+
+    res.status(200).json({ success: true, msg: 'Email sent!' });
+  } catch (error) {
+    console.error('Email error:', error);
+    res.status(500).json({ success: false, msg: 'Server error' });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`server is running on port ${port}`);
+});

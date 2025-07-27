@@ -13,17 +13,22 @@ import { IoLogoVercel } from 'react-icons/io5';
 import { SiNetlify } from 'react-icons/si';
 import { FaNpm } from 'react-icons/fa';
 import { FaJava } from 'react-icons/fa';
-import img from '../../../assets/programming-background-with-html-text.jpg';
+import clodinaryLinks from '../../../data/clodinaryLinks';
 import { useColor } from '../../../context/ColorContext';
 import { useTheme } from '../../../context/ThemeContext';
 
 function Skills() {
   const { color } = useColor();
   const { theme } = useTheme();
+  const { assets } = clodinaryLinks;
   return (
     <div className='w-full h-full md:h-[70vh] dark:bg-[#191919] bg-white px-[10vw] relative'>
       <div className='absolute top-0 left-0 w-full h-full md:h-[60vh] opacity-5 -skew-y-3'>
-        <img className='w-full h-[98%] object-cover' src={img} alt='' />
+        <img
+          className='w-full h-[98%] object-cover'
+          src={assets.skillPhoto}
+          alt=''
+        />
       </div>
       <h2 className='text-center text-5xl font-mont font-[700] py-10 dark:text-white text-black'>
         My Skills

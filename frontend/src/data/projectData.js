@@ -11,7 +11,8 @@ const projectData = {
       'Preview before download',
       'Responsive UI',
     ],
-    image: '/assets/notescafe.png',
+    image:
+      'https://res.cloudinary.com/dypilbion/image/upload/v1753634690/n9kw2pi1sbgv82rvjj13.png',
   },
   duostudio: {
     title: 'Duo Studio',
@@ -24,7 +25,8 @@ const projectData = {
       'Seamless animations that mimic the original design language',
       'Fully modular structure for easy scalability',
     ],
-    image: '/assets/sportsbuddy.png',
+    image:
+      'https://res.cloudinary.com/dypilbion/image/upload/v1753634697/fpw7l5mf9wrcpbgam71z.png',
   },
   // Add more here
 };

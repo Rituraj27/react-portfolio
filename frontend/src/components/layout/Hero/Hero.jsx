@@ -77,7 +77,7 @@ export default function Hero() {
               color: theme === 'dark' ? '#fff' : color,
               fontSize: 'clamp(12px, 2vw, 14px)',
             }}
-            className='pl-2 shadow-2xl bg-white  dark:bg-[#303030] md:text-sm/7 md:w-[60vh] w-full h-[30vh] flex flex-col justify-center rounded-md relative'
+            className='pl-2 shadow-2xl bg-[#dedbdb]  dark:bg-[#232323] md:text-sm/7 md:w-[60vh] w-full h-[30vh] flex flex-col justify-center rounded-md relative'
           >
             <pre>
               1&nbsp;class&nbsp;

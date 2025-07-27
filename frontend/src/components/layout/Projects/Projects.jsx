@@ -1,14 +1,14 @@
 import React from 'react';
-import notescafe from '../../../assets/ProjectImages/notescafe.png';
-import duoStudio from '../../../assets/ProjectImages/duostudio.png';
+import clodinaryLinks from '../../../data/clodinaryLinks';
 import ProjectCard from './ProjectCard';
 
 function Projects() {
+  const { assets: _, project } = clodinaryLinks;
   const projects = [
     {
       title: 'Notes Café',
       description: 'A web app for browsing and downloading academic notes.',
-      image: notescafe,
+      image: project.notescafe,
       slug: 'notescafe',
       liveLink: 'https://notescafe.vercel.app/',
       githubLink: 'https://github.com/Rituraj27/notescafe',
@@ -16,7 +16,7 @@ function Projects() {
     {
       title: 'Duo Studio',
       description: 'A portfolio website for a design studio.',
-      image: duoStudio,
+      image: project.duoStudio,
       slug: 'duostudio',
       liveLink: 'https://rituraj27.github.io/Duo-Studio-Clone/',
       githubLink: 'https://github.com/Rituraj27/Duo-Studio-Clone',

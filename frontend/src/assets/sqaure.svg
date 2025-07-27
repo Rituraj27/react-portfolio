@@ -1,8 +1,0 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 100 100"
-  fill="currentColor"
-  className="w-8 h-8 text-red-500"
->
-  <rect x="10" y="10" width="80" height="80" rx="0" ry="0" />
-</svg>
